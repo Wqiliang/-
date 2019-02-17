@@ -1,0 +1,809 @@
+*{margin:0;
+  padding:0;
+  
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+    border:none;
+}
+.navtop{
+    width:100%;
+    height:28px;
+    background:#f5f5f5;
+    border-top:1px solid #b6b4b6;
+    font-size:11px;
+}
+.navtop .nav-top .city{
+    width:46px;
+    height:27px;
+    float:left;
+    text-align: center;
+    line-height: 27px;
+    color:#666666;
+    
+    
+
+}
+.navtop .nav-top{
+    width:1000px;
+    height:28px;
+    
+  
+    margin:0 auto;
+}
+.navtop .nav-top ul {
+    float:right;
+}
+.navtop .nav-top ul li:nth-child(6) ul li{
+    float:none;
+}
+.navtop .nav-top ul li:nth-child(6) ul{
+    display:none;
+    position:absolute;
+}
+.navtop .nav-top ul li:nth-child(6):hover ul{
+    display:block;
+    z-index:7;
+    border:1px solid #ddd;
+    
+
+    background:#fff;
+    
+}
+.navtop .nav-top ul li {
+
+    float:left;
+    height:28px;
+    
+}
+.navtop .nav-top ul li:hover a{
+    color: #fa2a83;
+    border:1px solid #ddd;
+    
+    border-bottom:none;
+    
+}
+.navtop .nav-top ul li a{
+    display:block;
+    height:28px;
+    padding: 0 20px 0 20px;
+    line-height:28px;
+    color:#666666;
+
+}
+.lognav{
+    width:100%;
+    height:80px;
+    margin:20px 0 auto;
+    
+}
+.lognav .log-nav{
+    width:1000px;
+    clear: both;
+    margin:0 auto;
+    position:relative;
+}
+.lognav .log-nav .frist{
+    vertical-align: top;
+    margin-right:16px;
+
+  
+}
+
+.lognav .log-nav .log{
+    display:inline-block;
+    
+   
+    padding:0px 9px 0 9px;
+   
+
+}
+.lognav .search{
+    display: inline-block;
+     position:relative;
+     z-index:2;
+     width:389px;
+     
+     height:32px;
+    
+     border: 1px solid #fa2a83;
+     
+    background-color: #fff;
+    
+    
+    
+    
+}
+.search input{
+    padding:2px 12px;
+    width:331px;
+    height:28px;
+    line-height: 30px;
+    font-size:14px;
+    border:none;
+    background-color:#fff;
+}
+.search .buttonsearch{
+    position:absolute;
+    top:0;
+    right:0;
+    width:53px;
+    height:26px;
+    background:#fa2a83;
+    padding-top:6px;
+    text-align: center;
+    
+}
+.lognav .log-nav .gwc{
+    width:90px;
+    height:34px;
+    position:absolute;
+    right:0;
+    top:5px;;
+    background:#ddd;
+    font-size: 11px;
+    z-index:6;
+    color:red;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 2px 0 4px;
+    
+}
+.lognav .log-nav .gwc .gwright{
+    border-radius: 8px;
+    background:#f00581;
+    width:24px;
+    height:16px;
+    text-align: center;
+    color:#fff;
+
+}
+
+
+.secondnav{
+    width:100%;
+    height:44px;
+}
+.second-nav{
+    margin:0 auto;
+    width:1000px;
+    height:44px;
+    font-size:16px;
+    
+}
+.second-nav .goleft{
+    float:left;
+    font-size:19px;
+    width:156px;
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    background:  #fa2a83;
+    
+   
+    
+}
+.second-nav .goleft a{
+    color:#fff;
+}
+
+.secondnav .second-nav .goright{
+   
+    
+    float:right;
+    margin-right:145px;
+   
+    
+    
+    
+
+  
+}
+.second-nav .goright li{
+    float:left;
+}
+.second-nav .goright li a{
+    display:block;
+    height:44px;
+    line-height:44px;
+    padding-left:10px;
+    padding-right:10px;
+    
+    color:#333333;
+}
+
+
+.banner-container{
+    width: 100%;
+    
+    background:url("https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg") no-repeat center top;
+}
+.banner-container .banner-warp{
+    margin: 0 auto;
+    width:1000px;
+    height:340px;
+    overflow: hidden;
+    position:relative;
+    
+    box-sizing: border-box;
+
+    
+
+}
+.banner-container .banner-warp .bannerbutton button{
+    border-radius: 2px;
+    background: rgba(0,0,0,.2);
+    font-size:18px;
+    width:33px;
+    height:66px;
+    cursor: pointer;
+    
+}
+.bannerwap{
+    width:4000px;
+    height:340px;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.bannerbox{
+    width:1000px;
+    height:340px;
+    float:left;
+}
+.bannerbox img{
+    width:100%;
+    height:100%;
+}
+.banner-container .banner-warp .bannerbutton{
+    width:100%;
+    height:100px;
+    display:flex;
+    justify-content: space-between;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    z-index: 6;
+}
+.banner-container .banner-warp .click {
+    
+    width:100%;
+    height:20px;
+    text-align: center;
+    position:absolute;
+    bottom:50px;
+    z-index:6;
+    
+    
+}
+.banner-container .banner-warp .click span{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin-left:5px;
+    background:yellowgreen;
+    
+}
+.banner-container .banner-warp .click span.active{
+    background:#fa2a83;
+}
+.main-container{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.protitle{
+    width:1000px;
+    height:68px;
+}
+.protitle .imgbox{
+    width:1000px;
+    height:68px;
+    margin:40px auto;
+    overflow: hidden;
+    position: relative;
+}
+.protitle .imgbox img{
+    position: absolute;
+    left: 50%;
+    margin-left: -585px;
+    top: 0;
+}
+.nvzhuang{
+    margin:20px auto;
+    width:100%;
+    overflow: hidden;
+    clear: both;
+}
+.nvzhuang p{
+    width:1000px;
+    border-bottom:1px solid black;
+    height: 44px;
+    float: left;
+    position:relative;
+    margin-bottom:20px;
+    
+    
+}
+.nvzhuang p img{
+    height: 100%;
+}
+.nvzhuang p a{
+     position:absolute;
+     right:0;
+     bottom:5px;
+     font-size:14px;
+     color:#333;
+    
+
+}
+.itemwarp{
+    width:1020px;
+    display:bolck;
+    clear:both;
+    margin:0 auto;
+    background:#fff;
+    overflow: hidden;
+    
+}
+.showgood{
+    width:490px;
+    height:275px;
+    margin-bottom:20px;
+    margin-right:20px;
+    background:#fff;
+    position:relative;
+    z-index:1;
+    float:left;
+    
+}
+.showbox .ms{
+    position:absolute;
+    top:215px;
+    left:0;
+    background:rgba(0,0,0,.6);
+    width:365px;
+    padding:0 100px 0 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#fff;
+    font-size: 10px;
+}
+.showbox .lastms{
+    width:490px;
+    position:relative;
+    padding:0 120px 0 10px;
+    height:40px;
+    line-height:40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color:#333;
+    background:#fff;
+    cursor: pointer;
+    font-size:12px;
+    box-sizing: border-box;
+}
+.showbox a img{
+    width:100%;
+}
+.lastms p{
+    position:absolute;
+    right:20px;
+    
+    bottom:3px;
+    padding-top:12px;
+    padding-bottom:12px;
+    height:16px;
+    line-height: 16px;
+    color:#f10582;
+    white-space: nowrap;
+    font-size: 12px;
+
+}
+.lastms .salebg2{
+    font-size:24px;
+    color: #f10582;
+    margin-right:3px;
+    font-weight:700;
+}
+
+
+
+    
+
+
+/* 登录页面css */
+
+
+/* 注册页面头部 header */
+.top{
+    width:100%;
+    height:100px;
+    
+}
+.topwap{
+    width:1000px;
+    height:100px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    padding-right:10px;
+}
+.top .topwap img{
+    width:100%;
+    
+
+}
+/*    注册页面中间部分                  */
+ .cbody{
+     position:relative;
+    width:100%;
+    height:650px;
+    background:url("https://a.vpimg2.com/upload/flow/2019/01/29/88/15487540172274.jpg") no-repeat center top;
+    
+}
+.cbody-warp{
+    width: 1040px;
+    height: 650px;
+    margin: 0 auto;
+    position:relative;
+}
+.cbody .login{
+    width:360px;
+    height:436px;
+    position:absolute;
+    top:50px;
+    right:0px;
+    background:#fff;
+    border-radius: 2px;
+}
+
+.cbody .ctop{
+    border-bottom:1px solid #e0e0e0;
+    width:360px;
+
+    height:50px;
+}
+.cbody .ctop .cleft{
+    color:#f10180;
+    cursor:default;
+    width:180px;
+    height:50px;
+    z-index:1;
+    text-align: center;
+    font-size:18px;
+    font-weight: 700;
+    display:inline-block;
+    line-height:50px;
+    vertical-align: top;
+    position: relative;
+}
+.cbody .ctop .cleft::after{
+    position:absolute;
+    top:15px;
+    right:0;
+    
+    width:1px;
+    height:20px;
+    background-color:#ccc;
+    content:"";
+    font-size:0;
+    line-height:0;
+
+}
+.cbody .ctop .cright{
+    width:180px;
+    display:inline-block;
+    height:50px;
+    text-align: center;
+    color:#666;
+    font-size:18px;
+    font-weight:700;
+    line-height: 50px;
+    cursor:pointer;
+    
+
+
+}
+/* 隐藏显示 */
+.contentwarp{
+    position:relative;
+    height:264px;
+}
+
+.contentwarp .c-content{
+    width:360px;
+    height:264px;
+    
+    
+    text-align: center;
+    
+    
+
+}
+.t-content{
+    display: none; 
+}
+.contentwarp .c-content.active{
+    display:block;
+}
+.c-content .cimg{
+    margin:47px auto;
+    width:168px;
+    height:158px;
+    padding-top:10px;
+    border:1px solid #ddd;
+}
+.c-content p{
+    text-align: center;
+    margin-top:32px;
+    width:100%;
+    height:auto;
+    font-size:12px;
+
+}
+.c-content .wchartbox{
+    width:100%;
+    height:40px;
+    text-align: center;
+    margin-top:10px;
+}
+.c-content .wchartbox span{
+    position:relative;
+
+}
+/* .c-content .wchartbox span::before{
+    position:absolute;
+    left:0;
+    top:50%;
+    width:30px;
+    height:1px;
+    content:"";
+    background:black;
+    z-index:1
+    font-size:0;
+    line-height:0;
+
+
+} */
+/* 底部 */
+.c-content ul{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    font-size:12px;
+    padding-top:12px;
+    
+
+}
+.c-content .d-footer{
+    
+    padding-left:30px;
+    padding-right:30px;
+}
+.c-content ul li a {
+    color:#333333;
+}
+.c-content ul li .big{
+    font-size:15px;
+}
+
+.c-content .loginform{
+    width:100%;
+    height:386px;
+    
+
+}
+.c-content .loginform .topfrist{
+    width:300px;
+    height:386px;
+    margin:0 auto;
+    
+}
+.c-content .loginform .topfrist .inputwarp{
+    margin-top:40px;
+    height:40px;
+    border:1px solid red;
+    
+    position: relative;
+    
+
+}
+.c-content .loginform .topfrist .inputwarp .dleft{
+    position:absolute;
+    top:13px;
+    left:11px;
+    z-index: 99999;
+
+}
+.c-content .loginform .topfrist .inputwarp input{
+    height:40px;
+    width:268px;
+    border:none;
+    padding-left:30px;
+    background:#fff;
+    position:relative;
+}
+
+
+.c-content .loginform .topfrist .secondwarp{
+    height:40px;
+    border:1px solid red;
+    
+    position: relative;
+}
+.c-content .loginform .topfrist .secondwarp span{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 99999;
+}
+.c-content .loginform .topfrist .secondwarp input{
+    height:40px;
+    width:268px;
+    border:none;
+    background:#fff;
+    line-height: 39px;
+    position:relative;
+    padding-left:30px;
+    
+ 
+}
+
+ 
+/* 请按正确格式填写 */
+#second{
+    opacity: 0;
+    color: #f00;
+    font-size:12px;
+}
+#Tips{
+    opacity: 0;
+    color: #f00;
+    font-size:12px;
+}
+.middle{
+    width:100%;
+    
+    padding-top:8px;
+    height:12px;
+}
+.middle .checkbox{
+    font-size: 11px;
+    float:left;
+    display:flex;
+    
+    
+
+    
+}
+#sss{
+    width:18px;
+    height:18px;
+}
+.mima{
+    font-size:11px;
+    float:right;
+}
+.last{
+    margin-top:40px;
+    padding:14px;
+    color:#fff;
+    background:#fa2a83;
+    width:100%;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+/* 注册页面底部footer */
+
+footer{
+    width:100%;
+    height:78px;
+}
+
+footer .cfooter{
+    width:1000px;
+    height:78px;
+    margin:0 auto;
+}
+footer .cfooter p{
+    width:100%;
+    height:78px;
+    text-align: center;
+    color:#666;
+    line-height:78px;
+    font-size:11px;
+}
+/* 楼梯 */
+.floorwarp{
+    
+    width:60px;
+    position:fixed;
+    bottom:8%;
+    left:50px;
+    background:#fff;
+    border:1px solid #d6d6d6;
+    border-radius: 3px;
+    padding:0 7px;
+    display:none;
+    
+   
+
+}
+ .floorwarp .btn{
+    width:60px;
+    
+   
+   
+   
+    
+}
+
+.floorwarp .btn li a{
+    display:block;
+    width:60px;
+    height:36px;
+    border-bottom:1px solid #d6d6d6;
+    color:#666666;
+    text-align: center;
+    line-height:36px;
+    font-size:11px;
+    
+} 
+.floorwarp .btn li.active{
+    background:#fa2a83;
+}
+
+
+
+
+
+
+
+
+.main-container .stair{
+    min-height: 11850px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+      
+
+
+
+    
+    
+
+    
+
+
+

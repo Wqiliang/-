@@ -1,0 +1,29 @@
+$(".cright").click(function(){
+    $(".t-content").css({
+        display:"block"
+    })
+    $(".contentwarp").css({
+        display:"none"
+    })
+    $(".cright").css({
+        color:"#fa2a83"
+    })
+    $(".cleft").css({
+        color:"#666"
+    })
+})
+$(".cleft").click(function(){
+    $(".t-content").css({
+        display:"none"
+    })
+    $(".contentwarp").css({
+        display:"block"
+    })
+    $(".cleft").css({
+        color:"#fa2a83"
+    })
+    $(".cright").css({
+        color:"#666"
+    })
+    
+})

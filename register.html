@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="wph.css"/>
+    <link rel="stylesheet" href="./font/iconfont.css">
+</head>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+
+
+<body>
+    <header>
+<div class="top">
+    <div class="topwap">
+            <div class="clog">
+              <a href="wph.html"> <img src="img/logc.jpg"></a>
+            </div>
+                  <div class="blog">
+                    <a href="#"><img src="img/logb.jpg"></a>
+                  </div>
+    </div>
+</div>
+    </header>
+<section>
+        <div class="cbody">
+            <div class="cbody-warp">
+                    <div class="login">
+                        <div class="ctop">
+                            <div class="cleft" class="active">扫码登录</div><div class="cright" class="active">账户注册</div>
+                                
+                            
+                           
+
+                            
+                    </div>
+         <div class="contentwarp">            
+                 <div class="c-content" class="active">
+                          <div class="cimg">
+                             <img src="img/erweima.png">
+
+                           </div>
+                          <p>
+                            打开唯品会APP-个人中心，扫一扫登录
+                          </p>
+                         <div class="wchartbox">
+                           <span>
+                               <img src="img/weixin.jpg">
+                           </span>
+                          </div>
+                          <ul class="c-footer d-footer">
+                           <li><a href="#">新浪微博</a></li>
+                           <li><a href="#">QQ</a></li>
+                           <li><a href="#">支付宝</a></li>
+                           <li><a href="#">更多</a></li>
+                           <li><a class="big" href="#">免费注册</a></li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="c-content t-content" >
+                        <div class="loginform">
+                             <div class="topfrist">
+                                 <div class="inputwarp">
+                                     <span class="dleft iconfont">&#xe618;</span>
+                                    <input type="text" placeholder="手机号/用户名/邮箱"  id="username">
+                                  </div>
+                                    
+                                    <span id="Tips">请按正确格式填写</span>
+                                 
+                               <div class="secondwarp">
+                                   <span class="iconfont">&#xe7b8;</span>
+                                   <input type="password" placeholder="密码" id="password">
+                               </div>
+                                <span id="second">请按正确格式填写</span> 
+                                <div class="middle">
+                                    <div class="checkbox">
+                                     <input type="checkbox" id="sss">
+                                     <span>记住用户名</span>
+                                        
+                                    </div>
+                                    <span class="mima">忘记密码</span>
+                                    
+                               </div>   
+                                <button type="submit" class="last" id="submit">注册</button>
+                                <div class="wchartbox">
+                                     <span>
+                                         <img src="img/weixin.jpg">
+                                     </span>
+                                    </div>
+                                <ul class="c-footer">
+                                     <li><a href="#">新浪微博</a></li>
+                                     <li><a href="#">QQ</a></li>
+                                     <li><a href="#">支付宝</a></li>
+                                     <li><a href="#">更多</a></li>
+                                     <li><a class="big" href="#">免费注册</a></li>
+                                 </ul>
+                            </div>
+         
+                </div>
+             </div>
+         
+             </div>
+          </div>
+       </div>           
+    </div>           
+  </div>
+ </div>
+</section>
+<footer>
+<div class="cfooter">
+ <p>
+   Copyright 2008-2018 vip.com，All Rights Reserved ICP证：粤 B2-20080329
+</p>
+</div>
+</footer>
+</body>
+</html>  
+<script src="./js/login.js"></script>
+<script src="js/fy.js"></script>
+<script>
+           var submit = document.getElementById("submit")
+           var username = document.getElementById("username")
+           var password = document.getElementById("password")
+           submit.addEventListener("click",send)
+             function send(){
+                var uservalue = username.value
+                 var passwordvalue = password.value
+                var url = "http://localhost/weipinhui/interface/register.php"
+                  url += `?username=${uservalue}&password=${passwordvalue}`
+                 ajaxGet(url)
+                 .then(function(res){
+                       // console.log(res)
+                       var result = JSON.parse(res)
+                       if( result.state === "sucess" ){
+                           alert("恭喜注册成功")
+                       }else{
+                           alert("用户名重复请更换用户名")
+                       }
+                 })
+             }          var $userele =$("#username")
+                         var $second = $("#second")
+                        var $Tips = $("#Tips")
+                        var $passele = $("#password")
+                        
+                       $passele.blur(function(){
+                        var $user = $userele.val()
+                       var $pass = $passele.val()
+                                console.log($pass)
+                               var user_reg = /^[a-zA-Z0-9_-]{4,16}$/
+                               if(user_reg.test($pass)){
+                                 $second.css({
+                                     opacity:"0"
+                                 })
+                               }else{
+                                   $second.css({
+                                       opacity:"1"
+                                   })
+                               }
+                       })
+                       $userele.blur(function(){
+                        var $user = $userele.val()
+                       var $pass = $passele.val()
+                        console.log($user)
+                       
+                       var user_reg = /^[a-zA-Z0-9_-]{6,16}$/
+                       if(user_reg.test($user)){
+                         $Tips.css({
+                             opacity:"0"
+                         })
+                       }else{
+                           $Tips.css({
+                               opacity:"1"
+                           })
+                       }
+               })
+
+        //    function send(){
+        //         var uservalue = username.value
+        //         var passwordvalue = password.value
+        //         console.log(uservalue,passwordvalue)
+        //         var url = "http://localhost/weipinhui/interface/register.php"
+        //          url += `?username=${uservalue}&password=${passwordvalue}`;
+        //          var xhr = new XMLHttpRequest()
+		//      	xhr.open("GET",url)
+        //          xhr.send(null)
+        //          xhr.onreadystatechange = function(){
+        //              if(xhr.readyState === 4 && xhr.status ===200){
+        //                  console.log(xhr.response)
+        //              }
+        //          }
+        //    }
+</script>        
+       
+         
+    
+        
+                       
+             
+                        
+
+                        
+   
+
+
+        
+
+
+
+     
+               
+              
+                 
+
+     
+     
+
+     
+
+    
+
+
+
+        
+ 
+
+
